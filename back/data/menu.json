@@ -1,0 +1,44 @@
+{
+    "machines" :{
+        "name": "Machines",
+        "dropdown": true,
+        "options": [
+            {
+                "name":"Machine 1",
+                "href": "#!"
+            },
+            {
+                "name": "Machine 2",
+                "href": "#"
+            },
+            {
+                "name": "Machine 3",
+                "href": "#"
+            }
+        ]
+    },
+    "administration": {
+        "name": "Administration",
+        "dropdown": true,
+        "options": [
+            {
+                "name": "Option 1",
+                "href": "#"
+            },
+            {
+                "name": "Option 2",
+                "href": "#"
+            }
+        ]
+    },
+    "help": {
+        "name": "Help",
+        "dropdown": false,
+        "options": null
+    },
+    "contact": {
+        "name": "Contact",
+        "dropdown": false,
+        "options": null
+    }
+}

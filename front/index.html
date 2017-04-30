@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Testuppgift</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        .template, .hidden {
+            display:none !important;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div id="menuContainer" class="container">
+        <!-- Navbar start -->
+        <nav id="mainNavbar" class="navbar navbar-default">
+            <div id="navbarBar" class="container-fluid">
+                <!-- Navbar header start -->
+                <a href="#" class="navbar-brand">Epiforest</a>
+                <!-- Navbar header end -->
+
+                <!-- Navbar content start -->
+                <div class="collapse navbar-collapse">
+                    <ul id="navbarContent" class="nav navbar-nav">
+                        <!-- Templates -->
+                        <li id="li-single-template" class="template"><a href="#"></a></li>
+                        <li id="li-dropdown-template" class="template dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="dropdown-item-name"></span> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                            </ul>
+                        </li>    
+                        <!-- End Templates -->
+                    </ul>
+                    <div id="navbar-login-form" class="navbar-form navbar-left">
+                        <input type="text" class="form-control login-username" placeholder="Username">
+                        <button class="btn btn-default ">Login</button>
+                        <label> Remember me <input class="login-rem" type="checkbox"> </label>
+                    </div>
+                    <ul id="navbar-logout-form" class="nav navbar-nav navbar-right">
+                        <p id="navbar-login-name" class="navbar-text navbar-left">You are not logged in</p>
+                        <div id="navbar-logout" style="display:none;" class="navbar-form navbar-right"><button class="btn btn-link">Logout</button></div>
+                    </ul>
+                </div>
+                <!-- Navbar content end -->
+            </div>
+        </nav>
+        <!-- Navbar end -->
+    </div>
+
+    <div id="settingsContainer">
+        <div class="container">
+            <div id="radioOptions" class="col-md-3">
+                <div class="form-group col-md-6">
+                    <label><input type="radio" name="type" value="machine" checked> Machines</label>
+                    <label><input type="radio" name="type" value="driver"> Drivers</label>
+                </div>
+                <div id="overviewOption" class="form-group col-md-6">
+                    <label><input type="radio" name="view" value="overview" checked> Overview</label> 
+                    <label><input type="radio" name="view" value="detail"> Details</label>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div id="btnOptions" class="col-md-6">
+                <div class="btn-group day-option">
+                    <button class="btn btn-primary">Current</button>
+                    <button class="btn btn-primary">Today</button>
+                    <button class="btn btn-primary"><span class="caret"></span></button>
+                </div>
+                <div class="btn-group month-option">
+                    <button class="btn btn-primary">March</button>
+                    <button class="btn btn-primary"><span class="caret"></span></button>
+                </div>
+                <div class="btn-group week-option">
+                    <button class="btn btn-primary">Week 11</button>
+                    <button class="btn btn-primary"><span class="caret"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="front/js/app.js"></script>
+<script type="text/javascript" src="front/js/appModel.js"></script>
+<script type="text/javascript" src="front/js/views/navbarView.js"></script>
+<script type="text/javascript" src="front/js/views/searchSettingsView.js"></script>
+<script type="text/javascript" src="front/js/controller/navbarViewController.js"></script>
+<script type="text/javascript" src="front/js/controller/searchSettingsController.js"></script>
+
+</body>
+</html>
