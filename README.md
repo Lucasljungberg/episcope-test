@@ -3,7 +3,7 @@
 Detta är koden till den testuppgift jag fick. Jag hade ibland lite svårt med tolkning av uppgiften, men vid de tillfällena så förklarar jag hur jag tolkade frågan. Jag kommer även förklara kodens flöde. 
 
 ## Uppgift 1 - Bootstrap - Ajax
-Den andra delen av uppgiften hade jag väldigt svårt att förstå vad som efterfrågades och lämnade den i stort. Jag försökte däremot att visa de (vad jag uppfattade som) efterfrågade kunskaperna i den första delen av uppgiften.
+Den andra delen av uppgiften hade jag väldigt svårt att förstå vad som efterfrågades och lämnade den i stort (Jag implementerade dock en liten användarinteraktion genom att bara visa en detaljerade vyn när "Details" är markerat). Jag försökte däremot att visa de (vad jag uppfattade som) efterfrågade kunskaperna i den första delen av uppgiften.
 
 Frontend koden bygger lite på MVC-tänk. Menyn och sökinställningarna har sin varsin "vy" och en controller. Till dessa finns modellen som ansvarar för data och anrop till backend.
 
